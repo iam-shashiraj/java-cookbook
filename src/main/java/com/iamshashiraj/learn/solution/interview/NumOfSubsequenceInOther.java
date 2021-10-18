@@ -1,5 +1,7 @@
 package com.iamshashiraj.learn.solution.interview;
 
+import java.io.InvalidClassException;
+
 /*
     Num of times first one appears as subsequence in second
     S1=ABC, S2 = ABCBABC ANS = 5
@@ -10,7 +12,6 @@ public class NumOfSubsequenceInOther {
         String s2 = "Gks";
         int m = s1.length();
         int n = s2.length();
-
         int[][] lookup = new int[m+1][n+1];
 
         for (int i = 0; i <= n; i++) {

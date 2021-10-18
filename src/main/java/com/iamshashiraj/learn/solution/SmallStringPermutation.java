@@ -15,8 +15,6 @@ public class SmallStringPermutation {
             String currentWindow = bigString.substring(i, i+smallString.length());
             System.out.println(currentWindow);
             if (isPermutation(getCountMapFromString(smallString), getCountMapFromString(currentWindow))) {
-
-                // System.out.println(currentWindow);
                 count++;
             }
         }
