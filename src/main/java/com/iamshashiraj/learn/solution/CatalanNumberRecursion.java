@@ -12,17 +12,12 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 //import java.util.Collection
 
+// 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862,
+
 public class CatalanNumberRecursion {
     public static void main(String[] args) {
         int input = 4;
-
-        //IntStream.of(1,2).boxed().collect(Collectors.to)
-        Map<Integer, Integer> m  = new HashMap<>();
-        m.put(null, 100);
-        m.put(null, 200);
-        //System.out.println();
         System.out.println(input + " catalan number is " + catalan(input));
-        // 1 1 2 3 5 8
     }
 
 

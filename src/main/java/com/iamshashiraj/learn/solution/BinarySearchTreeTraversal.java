@@ -2,6 +2,9 @@ package com.iamshashiraj.learn.solution;
 
 import com.iamshashiraj.learn.model.TreeNode;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 public class BinarySearchTreeTraversal {
     public static void main(String[] args) {
         TreeNode node2 = new TreeNode(2);
@@ -13,7 +16,6 @@ public class BinarySearchTreeTraversal {
         TreeNode node15 = new TreeNode(15);
         TreeNode node11 = new TreeNode(11);
 
-        node8.setRight(node11);
         node8.setLeft(node5);
         node11.setLeft(node10);
         node11.setRight(node15);

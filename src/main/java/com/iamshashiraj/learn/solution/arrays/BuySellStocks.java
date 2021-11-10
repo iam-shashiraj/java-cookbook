@@ -6,20 +6,15 @@ import java.util.List;
 
 public class BuySellStocks {
     public static void main(String[] args) {
-        int[] prices = {12, 6, 4, 5, 7, 9, 10};
-        int lastPrice = prices[0];
-        List<Integer> nums = new ArrayList<>();
-        for(int i=1; i<prices.length; i++) {
-            if (lastPrice > prices[i]) {
-                lastPrice = prices[i];
-                continue;
-            } else {
-                nums.add(prices[i]);
-            }
+        int[] prices = {7, 1, 5, 3 , 6, 4};
+        int maxProfit = 0;
+        int currentMin = Integer.MAX_VALUE;
+        for (int i=0; i < prices.length; i++) {
+            currentMin = Math.min(currentMin, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - currentMin);
         }
+        System.out.println(maxProfit);
     }
 
-    static int findIndex(int[] nums, int num) {
-       return Arrays.asList(nums).indexOf(num);
-    }
+
 }

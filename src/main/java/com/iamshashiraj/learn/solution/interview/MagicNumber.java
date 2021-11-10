@@ -22,6 +22,7 @@ public class MagicNumber {
     static int getCount(String str) {
         int count = 0;
         int digits = str.length();
+
         for (Character c: str.toCharArray()) {
             count = count+ Integer.parseInt(String.valueOf(c));
         }

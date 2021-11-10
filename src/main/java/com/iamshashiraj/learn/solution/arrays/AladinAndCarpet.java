@@ -1,5 +1,6 @@
 package com.iamshashiraj.learn.solution.arrays;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 /*
     description here https://medium.com/beyond-programming/alaaddin-and-his-carpet-algorithm-problem-of-the-week-i-8b4e39cc13bb
